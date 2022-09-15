@@ -11,6 +11,9 @@ header{
     width:100%;
 }
 
+.page{
+    box-sizing: border-box;
+}
 
 .banner{
     width:99%;

@@ -162,6 +162,10 @@ li:hover .dropdown:hover{
 
 }
 
+.page{
+    box-sizing: border-box;
+}
+
 /*HOME PAGE*/
 
 .para1{
