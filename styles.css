@@ -525,6 +525,11 @@ table,th,td{
     border-radius: 15px;
 }
 
+.button:hover{
+    background-color: #babcba;
+
+}
+
 .byprocont{
     box-sizing: border-box;
     box-shadow:0  2px 2px 2px rgb(197, 195, 195);
@@ -566,11 +571,6 @@ table,th,td{
     border-radius: 15px;
 }
 
-.button2:hover{
-    background-color: #5daf5d;
-
-}
-
 .donation{
     box-sizing: border-box;
     box-shadow:1px  1px 1px 1px rgb(197, 195, 195);
@@ -586,9 +586,6 @@ table,th,td{
     font-size:20px;
 }
 
-.button3:hover{
-    background-color: #c1c3c1;
-}
 
 .purch1{
     box-sizing: border-box;
@@ -643,8 +640,8 @@ table,th,td{
     text-align: center;
     display: inline-block;
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom:5%;
+    margin-top:7%;
+    margin-bottom:4%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
     
@@ -665,6 +662,14 @@ table,th,td{
     border-radius: 20px;
 }
 
+.button1:hover, .button2:hover{
+    background-color: #91d991;
+
+}
+
+.button3:hover{
+    background-color: #c1c3c1;
+}
 .container3{
     margin:20px;
     width:30%;
@@ -681,7 +686,6 @@ table,th,td{
 .container:hover{
     transform: scale(1.03, 1.03);
 }
-
 
 #donate{
     background-color: rgb(111, 201, 111);
@@ -797,6 +801,6 @@ table,th,td{
     } 
     
     .container3{
-        margin:0;
+        margin:15px;
     }
 }
