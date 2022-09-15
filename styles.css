@@ -653,9 +653,10 @@ table,th,td{
     color: rgb(0, 0, 0);
     padding: 15px 20px;
     text-align: center;
-    display: inline-block;
+    display:block;
     font-size: 20px;
-    margin-left:47%;
+    margin-left:38%;
+    width:20%;
     margin-top: 20px;
     margin-bottom:2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
