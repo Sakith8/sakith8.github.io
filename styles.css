@@ -423,7 +423,7 @@ table,th,td{
     margin-top:10%;
 } 
 
-.teamuseumpara{
+#teamuseumpara{
     font-size:20px;
 }
 
@@ -443,7 +443,7 @@ table,th,td{
 }
 .mach1{
     float:center;
-    margin-right:100px;
+    margin-right:80px;
     border-radius:10px;
     width:400px;
     height:250px;
@@ -451,7 +451,7 @@ table,th,td{
 
 .mach2{
     float:center;
-    margin-right:100px;
+    margin-right:80px;
     border-radius:10px;
     width:400px;
     height:250px;
