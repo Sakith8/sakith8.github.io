@@ -185,13 +185,17 @@ li:hover .dropdown:hover{
 }
 
 .cont{
-    background-image: url("HTML TEA/images/home page image/home page image.jpg");
+    background-image: url('HTML TEA/images/home page image/home page image.jpg');
     background-size: cover;
     color:rgb(255, 251, 251);
     font-size: 40px;
     padding: 100px 40px;
 }
 
+.logo{
+    width:80px;
+    height:90px;
+}
 
 .hometext{
     color:white;
@@ -269,10 +273,11 @@ li:hover .dropdown:hover{
 /*TEA PLANTATIONS*/
 
 .teabanner{
-    color:rgb(0, 0, 0);
+    color:white;
     font-size: 30px;
     background-color: #75c175;
     padding:2px;
+    width:100%;
 }
 
 .nuwara1{
@@ -284,22 +289,8 @@ li:hover .dropdown:hover{
 
 }
 
-.nuwara2{
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
-}
-
 .ella1{
     margin-right:50px;
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
-}
-
-.ella2{
     margin-bottom:20px;
     border-radius:15px;
     width:400px;
@@ -315,14 +306,6 @@ li:hover .dropdown:hover{
 
 }
 
-.hatton2{
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
-    
-}
-
 .haputale1{
     margin-right:50px;
     margin-bottom:20px;
@@ -331,15 +314,6 @@ li:hover .dropdown:hover{
     height:250px;
 
 }
-
-.haputale2{
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
-    
-}
-
 
 .paraplant{
     font-size: 20px;
@@ -404,6 +378,16 @@ table,th,td{
     border-radius: 5px;
 
 } 
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:250px;
+    overflow:hidden;
+    background:none;
+   
+}
 
 .table{
     margin-left:auto;
@@ -554,7 +538,7 @@ table,th,td{
 .purchase{
     box-sizing: border-box;
     box-shadow:0  2px 2px 2px rgb(195, 191, 191);
-    background-color: #dde1dd;
+    background-color: #e4e9e4;
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
     margin:20px;
@@ -601,21 +585,6 @@ table,th,td{
     font-size:20px;
 }
 
-.button3{
-    text-decoration: none;
-    background-color: #dfe0df;
-    color: rgb(0, 0, 0);
-    padding: 15px 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    margin-left: 47%;
-    margin-top: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 15px;
-
-}
-
 .button3:hover{
     background-color: #c1c3c1;
 }
@@ -637,12 +606,62 @@ table,th,td{
 }
 
 .purch{
-    width:100%;
-    height:auto;
+    width:350px;
+    height:200px;
+}
+
+.purch2{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.purch3{
+    width:250px;
+    height:200px;
+}
+
+.topic{
+    background-color: rgb(111, 201, 111);
+    padding:30px;
+}
+
+.container3:hover, .purchase:hover{
+    transform: scale(1.02, 1.02);
 }
 
 .button{
     margin-bottom:20px;
+}
+
+.button2{
+    text-decoration: none;
+    background-color: #dfe0df;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom:5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    
+}
+
+.button3{
+    text-decoration: none;
+    background-color: #dfe0df;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-left:47%;
+    margin-top: 20px;
+    margin-bottom:2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
 }
 
 .container3{
@@ -657,8 +676,16 @@ table,th,td{
     align-items: center;
 }
 
+
 .container:hover{
     transform: scale(1.03, 1.03);
+}
+
+
+#donate{
+    background-color: rgb(111, 201, 111);
+    padding:30px;
+    color:white;
 }
 
 /*MOBILE COMPATIBILITY*/
@@ -674,7 +701,7 @@ table,th,td{
     .box{
         border:5px 5px 5px 5px solid white;
         border-style: double;
-        margin:5px;
+        margin:0;
         padding:5px;
         border-radius:20px;
         width: 100%;
@@ -704,7 +731,7 @@ table,th,td{
 
     /* TEA PLANTATIONS */
 
-    .nuwara1, .nuwara2, .ella1, .ella2, .hatton1, .hatton2, .haputale1, .haputale2{
+    .nuwara1, .ella1, .hatton1, .haputale1{
         width:100%;
         height:100%;
     }
@@ -714,9 +741,14 @@ table,th,td{
         width: 100%;
     }
 
+    .gmap_canvas{
+        width:100%;
+        height:100%;
+    }
+
     /* TEA MUSEUM */
 
-    .teamuseum2, .teamuseumimage,.mach1,.mach2,.mach3{
+    .teamuseum2, .teamuseumlogo, .teamuseumimage,.mach1,.mach2,.mach3{
         width:100%;
         height:100%;
         margin:auto;
@@ -735,6 +767,17 @@ table,th,td{
         height:100%;
     }
 
+    .container3{
+        width:100%;
+        height:100%;
+
+    }
+
+    /* BYPRODUCTS */
+    .teapot, .teasoap, .teatree{
+        width:100%;
+        height:100%;
+    }
 
 }
 
@@ -743,6 +786,16 @@ table,th,td{
         flex-direction: column;
     } 
     .menu{
-        justify-content: space-evenly;
+        justify-content:center;
     }  
+}
+
+@media only screen and (max-width:930px) {
+    .purch2{
+        flex-direction: column;
+    } 
+    
+    .container3{
+        margin:0;
+    }
 }

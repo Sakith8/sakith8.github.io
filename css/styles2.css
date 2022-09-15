@@ -6,12 +6,6 @@ header{
     width:100%;
 }
 
-/* .banner{
-    padding:10px;
-    background-image: url("images/zesta image/zestabanner.jpeg");  
-    opacity: 90%;
-} */
-
 .zestabanner{
     position: absolute;
     left: 0;

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 header{
     display:flex;
     justify-content:space-between;
@@ -134,7 +135,7 @@ body{
 }
 
 .button1:hover{
-    background-color:#c1c4c2;
+    background-color:#48ad6a;
 
 }
 
@@ -147,6 +148,7 @@ body{
 .align{
     text-align: center;
 }
+
 
 @media only screen and (max-width:1300px){
 
