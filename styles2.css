@@ -13,7 +13,13 @@ header{
 .banner{
     padding:10px;
     background-image: url('images/zesta image/zestabanner.jpeg');  
-    opacity: 90%;
+    opacity: 95%;
+    height:300%;
+    width:98%;
+}
+
+.align{
+    text-align: center;
 }
 
 .logoimg{
@@ -82,6 +88,7 @@ body{
         margin-bottom: 10%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 15px;
+        
 }
 
 .button:hover{
@@ -185,5 +192,22 @@ body{
      
      }
 
+     .button1{
+        margin-left: auto;
+        margin-right:auto;
+     }
+     
+     .button{
+        margin-left:45%;
+     }
 
+}
+
+@media only screen and (max-width:800px){
+    .button{
+        margin-left:40%;
+    }
+        
+
+    
 }
