@@ -840,6 +840,10 @@ table,th,td{
         height:90%;
     }
 
+    #font{
+        font-size:5%;
+    }
+
     /* PURCHASE */
 
     .conatiner, .purch{
@@ -854,7 +858,11 @@ table,th,td{
     }
 
     .purchcaption{
-        font-size: 100%;
+        font-size: 310%;
+    }
+
+    .topic{
+        font-size: 400%;
     }
 
     .purch2{
@@ -865,6 +873,14 @@ table,th,td{
     .teapot, .teasoap, .teatree{
         width:100%;
         height:100%;
+    }
+
+    .donate{
+        font-size: 310%;
+    }
+
+    #donate{
+        font-size: 400%;
     }
 
 }
