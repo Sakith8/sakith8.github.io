@@ -108,7 +108,7 @@ body{
         text-align: center;
         display:inline-block;
         font-size: 15px;
-        margin-left: 5%;
+        margin-left:43%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 15px;
         margin-top: 10px;
@@ -201,13 +201,27 @@ body{
         margin-left:45%;
      }
 
+     a.home{
+        margin-right: auto;
+        margin-left:auto;
+     }
+
 }
 
 @media only screen and (max-width:800px){
     .button{
         margin-left:40%;
     }
-        
 
+    .home{
+        margin-right: auto;
+        margin-left:auto;
+    }
     
 }
+@media only screen and (max-width:350px){
+    .home{
+        margin-left: 40%;
+    }
+}
+

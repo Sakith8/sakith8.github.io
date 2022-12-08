@@ -4,9 +4,6 @@
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     padding:9px;
     width:100%;
 }
@@ -16,6 +13,7 @@ header{
 }
 
 .banner{
+    margin:0%;
     width:98%;
     height:250px;
     background-image: url("images/delmah image/dilmah-banner.jpeg");
