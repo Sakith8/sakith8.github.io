@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WELCOME TO BOOKING PAGE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="tea home page">
+    <link rel="stylesheet" href="ticket.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/home page image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/home page image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/home page image/favicon-16x16.png">
+    <link rel="manifest" href="images/home page image/site.webmanifest">
+    <link rel="mask-icon" href="images/home page image/safari-pinned-tab.svg" color="#43aa5b">
+    <link rel="shortcut icon" href="images/home page image/favicon.ico">
+    <meta name="msapplication-TileColor" content="#43aa5b">
+    <meta name="msapplication-config" content="images/home page image/browserconfig.xml">
+    <meta name="theme-color" content="#43aa5b">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1 class="align">WELCOME TO BOOKING PAGE</h2>
+        </div>
+    </header>
+
+    <h2 class="topic">Book Your Tickets Now!</h2>
+    <form method="dialog" id="ticketForm">
+
+        <!-- BACK TO HOME PAGE -->
+
+        <a class="button" target="blank" href="index.html"><ion-icon name="arrow-back-outline"></ion-icon>Back to Home</a>
+
+        <!-- GUEST DETAILS -->
+
+        <form id="form">
+            <fieldset class="fieldset">
+                <legend>
+                    <h2 class="align1">Personal Information</h2>
+                </legend>
+
+                <div class="personalinfo">
+                    <p class="dialbox">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" min="6" required>
+                    <div class="error"></div>
+                    </p><br>
+
+                    <p class="dialbox">
+                        <label for="contactNum">Contact Number:</label><br>
+                        <input type="text" id="Contactnum" name="Cnum" min="10" required>
+                    <div class="error"></div>
+                    </p>
+                </div><br>
+
+                <div class="personalinfo">
+                    <p class="dialbox">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    <div class="error"></div>
+                    </p><br>
+
+                    <p class="dialbox">
+                        <label for="Remail">Confirm Email:</label><br>
+                        <input type="email" id="Remail" name="Remail" required>
+                    <div class="error"></div>
+                    </p><br>
+                </div><br>
+
+                <div class="personalinfo1">
+                    <p class="dialbox">
+                        <label for="gender">Gender</label><br>
+                        <select name="gender" id="gender" required>
+                            <option value="" selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select><br><br>
+
+                        <button id="submit" class="submit" type="submit">Submit</button>
+                    </p>
+                </div>
+
+                <h2 class="topic">Enter Date For Booking</h2>
+                <div class="calender">
+                    <input type="date" name="date" id="date" value="date">
+                </div><br>
+
+            </fieldset><br><br>
+
+            <!-- PRICES -->
+
+            <div class="tablespace">
+                <table class="table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Cost in LKR</th>
+                    </tr>
+                    <tr>
+                        <td>Local Adult Pass</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>Local Child Pass</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td>Foreign Adult Pass</td>
+                        <td>5500</td>
+                    </tr>
+                    <tr>
+                        <td>Foreign Child Pass</td>
+                        <td>2700</td>
+                    </tr>
+                    <tr>
+                        <td>Infant(Local or Foreign)</td>
+                        <td>free</td>
+                    </tr>
+                </table><br>
+
+                <!-- DURATION TABEL -->
+
+                <table class="table">
+                    <tr>
+                        <th>Duration</th>
+                        <th>Local</th>
+                        <th>Foreign</th>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>Adult & Child</td>
+                        <td>Adult & Child</td>
+                    </tr>
+
+                    <tr>
+                        <td>3 Hours</td>
+                        <td> - </td>
+                        <td> - </td>
+                    </tr>
+                    <td>Half Day</td>
+                    <td> Rs.350 </td>
+                    <td> Rs.450 </td>
+                    <tr>
+                        <td>Full Day</td>
+                        <td> Rs.600 </td>
+                        <td> Rs.800 </td>
+                    <tr>
+                </table>
+            </div>
+
+            <fieldset class="fieldset">
+                <legend>
+                    <h2>Details</h2>
+                </legend>
+
+                <h3 class="align">Infants(under age 4) are free to enter and no passes required</h3>
+
+                <!-- ADULT -->
+
+                <div id="adult-child">
+                    <div class="adultcount">
+                        <p id="local-adult">Local Adult</p>
+                        <div class="in-dec">
+                            <button class="increment-btn" data-id="num-in-dec">+</button>
+                            <h4 id="num-in-dec" data-value="0">0</h4>
+                            <button class="decrement-btn" data-id="num-in-dec">-</button><br><br><br>
+                        </div>
+
+                        <p id="foreign-adult">Foreign Adult</p>
+                        <div class="in-dec">
+                            <button class="increment-btn" data-id="num-in-dec1">+</button>
+                            <h4 id="num-in-dec1" value="0">0</h4>
+                            <button class="decrement-btn" data-id="num-in-dec1">-</button><br><br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHILD -->
+
+                <div id="adult-child">
+                    <div class="adultcount">
+                        <p id="local-child">Local Child</p>
+                        <div class="in-dec">
+                            <button class="increment-btn" data-id="num-in-dec2">+</button>
+                            <h4 id="num-in-dec2" value="0">0</h4>
+                            <button class="decrement-btn" data-id="num-in-dec2">-</button><br><br><br>
+                        </div>
+
+                        <p id="foreign-child">Foreign Child</p>
+                        <div class="in-dec">
+                            <button class="increment-btn" data-id="num-in-dec3">+</button>
+                            <h4 id="num-in-dec3" value="0">0</h4>
+                            <button class="decrement-btn" data-id="num-in-dec3">-</button><br><br><br>
+                        </div>
+                    </div>
+                </div>
+        </form>
+
+        <!-- DURATION -->
+
+        <div class="duration">
+            <label for="duration">Duration:</label>
+        </div><br>
+        <select name="duration" id="duration" required>
+            <option value="" selected>Select Time</option>
+            <option value="3 Hours">3 hours</option>
+            <option value="Half Day">Half Day</option>
+            <option value="Full Day">Full Day</option>
+        </select>
+        <br><br>
+
+        <button type="submit" id="Addbutton">Add to Order</button><br><br>
+        <button type="submit" id="AddFavbutton">Add to Favourite</button><br><br>
+        </div>
+        </fieldset><br>
+
+        <!-- CURRENT ORDER -->
+
+        <div class="currentorder">
+            <h2 class="align">CURRENT ORDER</h2>
+            <table id="table-overall">
+                <tr>
+                    <th>Ticket Purchased</th>
+                    <th>Duration</th>
+                    <th>Cost</th>
+                </tr>
+            </table>
+
+            <button class="confirm" type="reset" id="clear">Clear</button><br>
+
+            <button class="confirm" type="submit" id="PlaceOrder">Place Order</button><br>
+
+            <button class="confirm" type="submit" id="OrderFavbutton">Order Favourite</button><br>
+        </div>
+
+        <!-- OVERALL ORDER -->
+
+        <div id="currentorder">
+            <h2 class="align">TOTAL</h2>
+            <table id="table-overall-1">
+                <tr>
+                    <td>Total Tickets Purchased</td>
+                    <td>Total Cost</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <button class="confirm" type="submit" id="submit">Submit</button><br>
+
+        <div class="alert" name="class"></div>
+
+        <button class="confirm" type="submit" id="CheckLoyalty">Check Loyalty</button><br>
+
+
+        <!-- LOYAL POINTS NOTICE -->
+
+        <div id="Loyal-point">
+            <p id="Loyal-point-back"></p>
+            <button id="ok">OK</button><br><br>
+        </div>
+    </form>
+
+
+    <footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </footer>
+    <script src="scripts/ticket.js"></script>
+</body>
+
+</html
