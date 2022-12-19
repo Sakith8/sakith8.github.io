@@ -795,6 +795,10 @@ fieldset{
 
 }
 
+input[type="number"]{
+    width:20%;
+}
+
 #prompt-box {
     width: fit-content;
     border: 1px solid black;
