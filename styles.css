@@ -1,243 +1,249 @@
-header{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-    padding:9px;
-    width:auto;
-    height:auto;
-    background-color:rgb(79, 159, 79);
-    font-size:15px;
-}
-
-footer{
-    display:flex;
-    background-color:rgb(79, 159, 79);
-    padding:9px;
-    width:auto;
-    justify-content:center;
-    flex-direction:column;
+header {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    position:relative;  
-    margin-top:3%;
-    font-size:15px;
-    height:auto;
+    flex-direction: column;
+    padding: 9px;
+    width: auto;
+    height: auto;
+    background-color: rgb(79, 159, 79);
+    font-size: 15px;
 }
 
-section{
-    border:5px 5px solid white;
+footer {
+    display: flex;
+    background-color: rgb(79, 159, 79);
+    padding: 9px;
+    width: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 3%;
+    font-size: 15px;
+    height: auto;
 }
 
-h1{
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     margin:0.5em 0;
-     color:white;
+section {
+    border: 5px 5px solid white;
 }
 
-h2,h3{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     margin:1em 0;
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5em 0;
+    color: white;
 }
 
-body{
+h2,
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1em 0;
+}
+
+body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.logo{
+.logo {
     text-align: center;
-    margin:5px;
+    margin: 5px;
 
 }
 
-*{  
-    padding:0;
-    margin:0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav{
+.nav {
     display: flex;
-    list-style:none;
-    background:rgb(79, 159, 79);
-    padding:7px;
+    list-style: none;
+    background: rgb(79, 159, 79);
+    padding: 7px;
 
 }
 
-.nav li{
-    display:inline-block;
-    position:relative;
+.nav li {
+    display: inline-block;
+    position: relative;
 }
 
-.nav li a{
-    display:block;
-    padding:10px 30px;
-    color:rgb(255, 255, 255);
+.nav li a {
+    display: block;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    text-align:center ;
-    font-size:17px;
+    text-align: center;
+    font-size: 17px;
 }
 
-.align{
+.align {
     text-align: center;
 }
 
 
-.nav li ul.dropdown li{
-    display:block;
-    padding:8px;
+.nav li ul.dropdown li {
+    display: block;
+    padding: 8px;
 
 }
 
-.nav li ul.dropdown{
-    width:90%;
-    background:rgb(79, 159, 79);
-    position:absolute;
-    z-index:999;
-    display:none;
+.nav li ul.dropdown {
+    width: 90%;
+    background: rgb(79, 159, 79);
+    position: absolute;
+    z-index: 999;
+    display: none;
     text-align: center;
 
 }
 
-.nav li a:hover{
-    background:rgb(68, 138, 68);
+.nav li a:hover {
+    background: rgb(68, 138, 68);
     border-radius: 10px;
 
 }
 
-.nav li:hover ul.dropdown{
-    display:block;
-    padding:0px 10px;
+.nav li:hover ul.dropdown {
+    display: block;
+    padding: 0px 10px;
 }
 
 
-li:hover .dropdown:hover{
-    display:block;  
-  
+li:hover .dropdown:hover {
+    display: block;
+
 }
 
-.menu li, .socialmedia li{
-    list-style:none;
+.menu li,
+.socialmedia li {
+    list-style: none;
 }
 
-.menu, .socialmedia{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
+.menu,
+.socialmedia {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.menu a{
+.menu a {
     color: white;
-    display:inline-flex;
-    text-decoration:none;
-    margin:0 30px;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 30px;
 }
 
 .socialmedia a {
-    font-size:1.5em;
-    color:white;
-    display:inline-block;
-    transition:0.2s;
-    margin:20px 15px;
+    font-size: 1.5em;
+    color: white;
+    display: inline-block;
+    transition: 0.2s;
+    margin: 20px 15px;
 }
 
-.menu a:hover, .socialmedia a:hover, .contact a:hover{
+.menu a:hover,
+.socialmedia a:hover,
+.contact a:hover {
     color: rgb(60, 60, 60);
-    transition:0.2s;
+    transition: 0.2s;
 }
 
-.contact{
-    color:rgb(255, 255, 255);
+.contact {
+    color: rgb(255, 255, 255);
 }
 
-.contact a{
+.contact a {
     justify-content: center;
-    text-decoration:none;
-    margin:20px 15px;
-    color:white;
+    text-decoration: none;
+    margin: 20px 15px;
+    color: white;
 }
 
-#copyright{
-    color:white;
+#copyright {
+    color: white;
 
 }
 
-.page{
+.page {
     box-sizing: border-box;
 }
 
 /*HOME PAGE*/
 
-.para1{
+.para1 {
     font-size: 20px;
 }
 
-.class1{
-    margin-left:15%;
-    margin-right:15%;
+.class1 {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-.class2{
-    margin-left:47%;
+.class2 {
+    margin-left: 47%;
     margin-top: 8px;
 }
 
-.class3{
-    margin-left:44%;
+.class3 {
+    margin-left: 44%;
     margin-top: 2px;
     margin-bottom: 8px;
 }
 
-.cont{
+.cont {
     background-image: url('images/home page image/home page image.jpg');
     background-size: cover;
-    color:rgb(255, 251, 251);
+    color: rgb(255, 251, 251);
     font-size: 40px;
     padding: 60px 40px;
-    
+
 }
 
-.logo{
-    width:80px;
-    height:90px;
+.logo {
+    width: 80px;
+    height: 90px;
 }
 
-.hometext{
-    color:white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left; 
+.hometext {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 40px;
-    opacity:20%;
+    opacity: 20%;
 
 }
 
-.box, .box1{
-    border:5px 5px 5px 5px solid white;
+.box,
+.box1 {
+    border: 5px 5px 5px 5px solid white;
     border-style: double;
-    margin:5px;
-    padding:5px;
-    border-radius:20px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
     width: 98%;
- 
+
 }
 
-.area{
-    margin-left:35%;
+.area {
+    margin-left: 35%;
 }
 
-.regiontea{
+.regiontea {
     margin-top: 50px;
-    margin-right: 15%;  
-    margin-bottom:5%;
-    width:350px;
-    height:500px;  
+    margin-right: 15%;
+    margin-bottom: 5%;
+    width: 350px;
+    height: 500px;
 }
 
 
-.img2{
+.img2 {
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -247,261 +253,269 @@ li:hover .dropdown:hover{
     font-weight: 600;
 }
 
-.img3{
+.img3 {
     align-items: center;
 }
 
-.img{
+.img {
     align-items: right;
 }
 
-.historyimg1{
-    width:500px;
-    height:350px;
+.historyimg1 {
+    width: 500px;
+    height: 350px;
 }
 
-.history2, .history3{
-    border-radius:10px;
-    margin-left:50px;
-    margin-right:50px;
-    width:400px;
-    height:300px;
-    margin-bottom:3%;
-    margin-top:3%;
+.history2,
+.history3 {
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
-.teamap{
-    border-radius:10px;
-    width:400px;
-    height:300px;
-   
+.teamap {
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+
 }
 
 /*TEA PLANTATIONS*/
 
-.teabanner{
-    color:white;
+.teabanner {
+    color: white;
     font-size: 30px;
     background-color: #75c175;
-    padding:2px;
-    width:100%;
+    padding: 2px;
+    width: 100%;
 }
 
-.nuwara1{
-     margin-right:50px;
-     margin-bottom:20px;
-     border-radius:15px;
-     width:400px;
-     height:250px;
-
-}
-
-.ella1{
-    margin-right:50px;
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
-}
-
-.hatton1{
-    margin-right:50px;
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
+.nuwara1 {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
 
 }
 
-.haputale1{
-    margin-right:50px;
-    margin-bottom:20px;
-    border-radius:15px;
-    width:400px;
-    height:250px;
+.ella1 {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+}
+
+.hatton1 {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
 
 }
 
-.paraplant{
+.haputale1 {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+
+}
+
+.paraplant {
     font-size: 20px;
     text-align: center;
 }
 
-.lipton{
-    border-radius:15px;
-    width:400px;
-    height:250px;
-    margin:20px;
-
-}
-.teafac1{
-    border-radius:15px;
-    width:400px;
-    height:250px;
-    margin:20px;
+.lipton {
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
 
 }
 
-.teafac2{
-    border-radius:15px;
-    width:400px;
-    height:250px;
-    margin:20px;
+.teafac1 {
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
 
 }
 
-.container{
-    display:flex;
+.teafac2 {
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+
 }
 
-.container1{
+.container {
+    display: flex;
+}
+
+.container1 {
     display: inline-flex;
-    flex-flow: row wrap;   
+    flex-flow: row wrap;
 }
 
-.nuwaraeliya, .hatton{
+.nuwaraeliya,
+.hatton {
     background-color: #ffffff;
     box-sizing: border-box;
-    box-shadow:0  2px 2px 2px rgb(197, 195, 195);
+    box-shadow: 0 2px 2px 2px rgb(197, 195, 195);
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
-    margin:20px;
-    border-radius:15px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
-.ella, .haputale{
+.ella,
+.haputale {
     background-color: #e7eae7;
     box-sizing: border-box;
-    box-shadow:0  2px 2px 2px rgb(197, 195, 195);
+    box-shadow: 0 2px 2px 2px rgb(197, 195, 195);
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
-    margin:20px;
-    border-radius:15px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
-table,th,td{
-    border:2px solid black;
-    border-collapse:separate;
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: separate;
     border-radius: 5px;
 
-} 
-
-.mapouter{
-    position:relative;
-    text-align:right;
-    width:100%;
-    height:250px;
-    overflow:hidden;
-    background:none;
-   
 }
 
-.table{
-    margin-left:auto;
-    margin-right:auto;
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: none;
+
 }
 
-.container{
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
     text-align: center;
 }
 
 
 /*CEYLON TEA MUSEUM*/
-    
-.teamuseumtext{
-    color:rgb(0, 0, 0);
+
+.teamuseumtext {
+    color: rgb(0, 0, 0);
     font-size: 30px;
     background-color: #75c175;
-    padding:2px;
+    padding: 2px;
 }
 
-.teamuseumlogo{
-    width:30%;
-    height:40%;
+.teamuseumlogo {
+    width: 30%;
+    height: 40%;
     justify-content: center;
-    margin-top:1%;
-    margin-bottom:20px;
+    margin-top: 1%;
+    margin-bottom: 20px;
 }
 
-.teamuseum{
-    border-radius:15px;
+.teamuseum {
+    border-radius: 15px;
     margin-left: 80%;
-    margin-top:10%;
-} 
-
-#teamuseumpara{
-    font-size:20px;
+    margin-top: 10%;
 }
 
-.teamuseum1{
-    margin-bottom:10px;
-    border-radius:10px;
-    width:200px;
-    height:300px;
+#teamuseumpara {
+    font-size: 20px;
 }
 
- .teamuseum2, .teamuseumimage{ 
-    border-radius:10px;
-    margin:20px;
-    width:500px;
-    height:350px;
-
-}
-.mach1{
-    float:center;
-    margin-right:80px;
-    border-radius:10px;
-    width:400px;
-    height:250px;
+.teamuseum1 {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
 }
 
-.mach2{
-    float:center;
-    margin-right:80px;
-    border-radius:10px;
-    width:400px;
-    height:250px;
+.teamuseum2,
+.teamuseumimage {
+    border-radius: 10px;
+    margin: 20px;
+    width: 500px;
+    height: 350px;
+
 }
 
-.mach3{
-    float:center;
-    border-radius:10px;
-    width:400px;
-    height:250px;
+.mach1 {
+    float: center;
+    margin-right: 80px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
 }
 
-.historymuseum{
+.mach2 {
+    float: center;
+    margin-right: 80px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.mach3 {
+    float: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.historymuseum {
     box-sizing: border-box;
-    box-shadow:0  2px 2px 2px rgb(197, 195, 195);
+    box-shadow: 0 2px 2px 2px rgb(197, 195, 195);
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
-    margin:20px;
-    border-radius:15px;
-    
+    margin: 20px;
+    border-radius: 15px;
+
 }
 
-.location{
+.location {
     background-color: rgb(111, 201, 111);
-    padding:20px;
+    padding: 20px;
 }
 
-.button4{
+.button4 {
     text-decoration: none;
     background-color: #dfe0df;
     color: rgb(0, 0, 0);
     padding: 15px 20px;
     text-align: center;
-    display:block;
+    display: block;
     font-size: 20px;
-    margin-left:38%;
-    width:20%;
+    margin-left: 38%;
+    width: 20%;
     margin-top: 20px;
-    margin-bottom:2%;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
 }
 
-.button4:hover{
+.button4:hover {
     background-color: #64a564;
     color: rgb(255, 251, 251);
 
@@ -509,36 +523,36 @@ table,th,td{
 
 /*BYPRODUCTS*/
 
-.teapot{
+.teapot {
     margin-bottom: 20px;
-    width:400px;
-    height:400px;
-    
-}
-
-.teasoap{
-    margin-bottom:20px;
-    width:400px;
-    height:400px;
-}
-
-.teatree{
-    margin-bottom:20px;
-    width:400px;
-    height:400px;
-}
-
-.products{
-    margin-left:25%;
+    width: 400px;
+    height: 400px;
 
 }
 
-.para2{
-    margin-left:44%;
+.teasoap {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.teatree {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.products {
+    margin-left: 25%;
+
+}
+
+.para2 {
+    margin-left: 44%;
     font-size: 20px;
 }
 
-.button{
+.button {
     text-decoration: none;
     background-color: #dfe0df;
     color: rgb(0, 0, 0);
@@ -546,46 +560,46 @@ table,th,td{
     text-align: center;
     display: inline-block;
     font-size: 15px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 15px;
 }
 
-.button:hover{
+.button:hover {
     background-color: #babcba;
 
 }
 
-.byprocont{
+.byprocont {
     box-sizing: border-box;
-    box-shadow:0  2px 2px 2px rgb(197, 195, 195);
+    box-shadow: 0 2px 2px 2px rgb(197, 195, 195);
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
-    margin:20px;
-    border-radius:15px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
 /*PURCHASE AND DONATE*/
 
-.purchase{
+.purchase {
     box-sizing: border-box;
-    box-shadow:0  2px 2px 2px rgb(195, 191, 191);
+    box-shadow: 0 2px 2px 2px rgb(195, 191, 191);
     background-color: #e4e9e4;
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
-    margin:20px;
-    border-radius:15px;
+    margin: 20px;
+    border-radius: 15px;
 
 }
 
-.text{
+.text {
     font-size: 20px;
     text-align: center;
 }
 
-.button2{
+.button2 {
     text-decoration: none;
     background-color: #69c569;
     color: rgb(0, 0, 0);
@@ -599,69 +613,70 @@ table,th,td{
     border-radius: 15px;
 }
 
-.donation{
+.donation {
     box-sizing: border-box;
-    box-shadow:1px  1px 1px 1px rgb(197, 195, 195);
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 25px;
-    margin:20px;
-    border-radius:15px;
+    margin: 20px;
+    border-radius: 15px;
 
 }
 
-.donate{
+.donate {
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
 }
 
 
-.purch1{
+.purch1 {
     box-sizing: border-box;
-    box-shadow:0  5px 5px 5px rgb(197, 195, 195);
+    box-shadow: 0 5px 5px 5px rgb(197, 195, 195);
     border: 1px hidden rgb(72, 71, 71);
     padding: 15px 20px;
-    margin:20px;
+    margin: 20px;
 
 }
 
-#logo{
+#logo {
     color: black;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:space-around;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-.purch{
-    width:400px;
-    height:250px;
+.purch {
+    width: 400px;
+    height: 250px;
 }
 
-.purch2{
+.purch2 {
     display: flex;
     justify-content: space-between;
 
 }
 
-.purch3{
-    width:290px;
-    height:250px;
+.purch3 {
+    width: 290px;
+    height: 250px;
 }
 
 
-.topic{
+.topic {
     background-color: rgb(111, 201, 111);
-    padding:30px;
+    padding: 30px;
 }
 
-.container3:hover, .purchase:hover{
+.container3:hover,
+.purchase:hover {
     transform: scale(1.02, 1.02);
 }
 
-.button{
-    margin-bottom:20px;
+.button {
+    margin-bottom: 20px;
 }
 
-.button2{
+.button2 {
     text-decoration: none;
     background-color: #dfe0df;
     color: rgb(0, 0, 0);
@@ -669,134 +684,140 @@ table,th,td{
     text-align: center;
     display: inline-block;
     font-size: 15px;
-    margin-top:7%;
-    margin-bottom:4%;
+    margin-top: 7%;
+    margin-bottom: 4%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
-    margin-left:auto;
-    margin-right:auto;
-    
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.button3{
+.button3 {
     text-decoration: none;
     background-color: #dfe0df;
     color: rgb(0, 0, 0);
     padding: 15px 20px;
     text-align: center;
-    display:block;
+    display: block;
     font-size: 20px;
-    margin-left:38%;
-    width:20%;
+    margin-left: 38%;
+    width: 20%;
     margin-top: 20px;
-    margin-bottom:2%;
+    margin-bottom: 2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
 }
 
-.button1:hover, .button2:hover{
+.button1:hover,
+.button2:hover {
     background-color: #91d991;
 
 }
 
-.button3:hover{
+.button3:hover {
     background-color: #c1c3c1;
 }
-.container3{
-    margin:30px;
-    margin-left:auto;
-    margin-right:auto; 
-    width:30%;
-    height:30%;
+
+.container3 {
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
     box-sizing: border-box;
-    box-shadow:0  5px 5px 5px rgb(197, 195, 195);
-    background-color:white;
+    box-shadow: 0 5px 5px 5px rgb(197, 195, 195);
+    background-color: white;
     border: 0.1px hidden rgb(72, 71, 71);
     border-radius: 10px;
     align-items: center;
 }
 
 
-.container:hover{
+.container:hover {
     transform: scale(1.03, 1.03);
 }
 
-#donate{
+#donate {
     background-color: rgb(111, 201, 111);
-    padding:30px;
-    color:white;
+    padding: 30px;
+    color: white;
 }
 
-.details{
-    text-align:left;
+.details {
+    text-align: left;
     flex-direction: row;
-    margin:50px;
-    
+    margin: 50px;
+
 }
-.bar{
-    background-color:rgb(111, 201, 111) ;
+
+.bar {
+    background-color: rgb(111, 201, 111);
     color: #ffffff;
     width: 100%;
     text-align: center;
+    font-size: 15px;
+    padding: 2px;
 
 }
 
-.details1{
-    text-align:center;
+.details1 {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
-input[type="text1"]{
-    width:30%;
-    margin:5px;
+input[type="text1"] {
+    width: 30%;
+    margin: 5px;
 }
 
-select{
-    width:15%;
-    height:20%;
+select {
+    width: 15%;
+    height: 20%;
     text-align: center;
 }
 
-.details2{
-    text-align:left;
+.details2 {
+    text-align: left;
     flex-direction: row;
-    margin:50px;
+    margin: 50px;
 }
 
-input[type="text"]{
-    width:20%;
+input[type="text"] {
+    width: 20%;
 }
 
-.submit,.reset{
-    color:white;
+.submit,
+.reset {
+    color: white;
     background-color: #69c569;
-    width:10%;
-    height:20%;
-    margin:20px;
+    width: 10%;
+    height: 20%;
+    margin: 20px;
 }
 
-#justify{
+#justify {
     display: flex;
     flex-direction: column;
 }
 
-input[placeholder]{
+input[placeholder] {
     text-align: center;
 }
 
-fieldset{
-    width:50%;
-    height:50%;
+fieldset {
+    width: 50%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-input[type="number"]{
-    width:20%;
+input[type="number"] {
+    width: 20%;
 }
 
 #prompt-box {
@@ -811,65 +832,72 @@ input[type="number"]{
     animation-duration: 2.5s;
 }
 
+.error {
+    color: red;
+    font-size: 12px;
+}
+
 /*MOBILE COMPATIBILITY*/
 
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:1300px) {
 
-    .page, .nav{
+    .page,
+    .nav {
         margin-left: auto;
-        margin-right:auto
-
+        margin-right: auto
     }
 
-    .container3{
-        margin:40px;
-        margin-left:auto;
-        margin-right:auto;
+    .container3 {
+        margin: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .menu a{
-        margin:5px;
+    .menu a {
+        margin: 5px;
     }
 
     /* HOMEPAGE */
 
-    .hometext{
+    .hometext {
         font-size: 20px;
 
     }
 
-    .para1{
+    .para1 {
         font-size: 15px;
-        align-content:center;
+        align-content: center;
     }
-    
-    .box{
-        border:5px 5px 5px 5px solid white;
+
+    .box {
+        border: 5px 5px 5px 5px solid white;
         border-style: double;
-        margin:10px;
-        padding:5px;
-        border-radius:20px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 20px;
         width: 96%;
-        margin-left:1%;
-        margin-right:1%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
-    .historyimg1, .history2, .history3{
-        width:80%;
-        height:80%;
-        margin-left:auto;
-        margin-right:auto;
+    .historyimg1,
+    .history2,
+    .history3 {
+        width: 80%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .regiontea{
-        width:100%;
-       height:100%;
-       margin-left:auto;
-       margin-right:auto;
-        
+    .regiontea {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
-    .class3{
+    .class3 {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -877,273 +905,298 @@ input[type="number"]{
 
     }
 
-    .para1{
+    .para1 {
         align-content: center;
     }
 
     /* TEA PLANTATIONS */
 
-    .nuwara1, .ella1, .hatton1, .haputale1{
-        width:100%;
-        height:100%;
+    .nuwara1,
+    .ella1,
+    .hatton1,
+    .haputale1 {
+        width: 100%;
+        height: 100%;
     }
 
-    .lipton, .teafac1, .teafac2{
-        margin:auto;
-        width:80%;
-        height:80%
+    .lipton,
+    .teafac1,
+    .teafac2 {
+        margin: auto;
+        width: 80%;
+        height: 80%
     }
 
-    .gmap_canvas{
-        width:100%;
-        height:100%;
+    .gmap_canvas {
+        width: 100%;
+        height: 100%;
     }
 
     /* TEA MUSEUM */
 
-    .teamuseum2,  .teamuseumimage,.mach1,.mach2,.mach3{
-        width:100%;
-        height:100%;
-        margin:auto;
+    .teamuseum2,
+    .teamuseumimage,
+    .mach1,
+    .mach2,
+    .mach3 {
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
 
-    .teamuseumlogo{
-        width:50%;
-        height:70%;
+    .teamuseumlogo {
+        width: 50%;
+        height: 70%;
 
     }
 
-    .map{
-        width:100%;
-        height:100%;
+    .map {
+        width: 100%;
+        height: 100%;
 
     }
 
-    .table{
-        width:90%;
-        height:90%;
+    .table {
+        width: 90%;
+        height: 90%;
     }
 
     /* PURCHASE */
 
-    .conatiner, .purch{
-        width:100%;
-        height:100%;
+    .conatiner,
+    .purch {
+        width: 100%;
+        height: 100%;
     }
 
-    .container3{
-        width:90%;
-        height:90%;
+    .container3 {
+        width: 90%;
+        height: 90%;
 
     }
 
-    .purchcaption{
+    .purchcaption {
         font-size: 200%;
     }
 
-    .topic{
+    .topic {
         font-size: 400%;
     }
 
-    .purch2{
+    .purch2 {
         flex-direction: column;
-    } 
-
-    /* BYPRODUCTS */
-    .teapot, .teasoap, .teatree{
-        width:100%;
-        height:100%;
     }
 
-    fieldset{
+    /* BYPRODUCTS */
+    .teapot,
+    .teasoap,
+    .teatree {
+        width: 100%;
+        height: 100%;
+    }
+
+    fieldset {
         font-size: 15px;
     }
 
-    label{
+    label {
         font-size: 30px;
     }
 
-    .donate{
+    .donate {
         font-size: 310%;
     }
 
-    #donate{
+    #donate {
         font-size: 300%;
     }
 
-    fieldset{
+    fieldset {
         margin-left: auto;
         margin-right: auto;
-        width:100%;
+        width: 100%;
     }
 
-    input[type="text1"]{
-        width:50%;
-        margin:5px;
-    }
-    #donation-amount{
-        width:40%;
+    input[type="text1"] {
+        width: 50%;
+        margin: 5px;
     }
 
-    input[type="text"]{
-        width:40%;
+    #donation-amount {
+        width: 40%;
     }
 
-    input[type="number"]{
-        width:40%;
+    input[type="text"] {
+        width: 40%;
     }
 
-    #month , #year{
-        width:20%;
+    input[type="number"] {
+        width: 40%;
     }
 
-    button[type="submit"], button[type="reset"]{
-        width:40%;
+    #month,
+    #year {
+        width: 20%;
     }
 
-    label{
+    button[type='button'],
+    button[type='reset'] {
+        width: 40%;
+    }
+
+    label {
         font-size: 10px;
     }
 
 }
 
 @media only screen and (max-width:1160px) {
-    .nav{
+    .nav {
         flex-direction: column;
-    } 
-    .menu{
-        justify-content:center;
-    }  
+    }
 
-    ul.menu{
+    .menu {
+        justify-content: center;
+    }
+
+    ul.menu {
         flex-direction: column;
         justify-content: center;
 
     }
 
-    .purchcaption{
+    .purchcaption {
         font-size: 150%;
     }
 
-    #donate{
+    #donate {
         font-size: 200%;
     }
 
-    .donate{
+    .donate {
         font-size: 150%;
     }
 }
 
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:450px) {
 
-    #teamuseumpara{
+    #teamuseumpara {
         font-size: 15px;
     }
 
-    .map{
-        height:auto;
-        width:auto;
+    .map {
+        height: auto;
+        width: auto;
 
-}
+    }
 
-    .location, .historymuseum , .haputale, .hatton , .ella , .nuwaraeliya{
+    .location,
+    .historymuseum,
+    .haputale,
+    .hatton,
+    .ella,
+    .nuwaraeliya {
         font-size: 15px;
     }
 
-    .page, .nav{
+    .page,
+    .nav {
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
         font-size: 5px;
-        width:auto;
+        width: auto;
 
-    } 
+    }
 
-    .purchcaption, .paraplant{
+    .purchcaption,
+    .paraplant {
         font-size: 15px;
     }
 
-    .logo{
-        margin:5px;
+    .logo {
+        margin: 5px;
     }
 
-    .box{
-        width:89%;
-        margin-left:auto;
-        margin-right:auto ;
+    .box {
+        width: 89%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .class3{
-        width:25%;
+    .class3 {
+        width: 25%;
     }
 
-    .teamuseumlogo{
-        width:80%;
-        height:100%;
+    .teamuseumlogo {
+        width: 80%;
+        height: 100%;
     }
 
-    .box1{
+    .box1 {
         width: 92%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
 
-    .class1{
-        margin-left:25%;
+    .class1 {
+        margin-left: 25%;
     }
 
-    .button3{
-        margin-left:33%;
+    .button3 {
+        margin-left: 33%;
     }
 
-    .donate{
+    .donate {
         font-size: 310%;
     }
 
-    #donate{
+    #donate {
         font-size: 300%;
     }
 
-    fieldset{
+    fieldset {
         margin-left: auto;
         margin-right: auto;
-        width:100%;
+        width: 100%;
     }
 
-    input[type="text1"]{
-        width:70%;
-        margin:5px;
-    }
-    #donation-amount{
-        width:40%;
+    input[type="text1"] {
+        width: 70%;
+        margin: 5px;
     }
 
-    input[type="text"]{
-        width:60%;
+    #donation-amount {
+        width: 40%;
     }
 
-    input[type="number"]{
-        width:50%;
+    input[type="text"] {
+        width: 60%;
     }
 
-    #month , #year{
-        width:30%;
+    input[type="number"] {
+        width: 50%;
     }
 
-    button[type="submit"], button[type="reset"]{
-        width:40%;
+    #month,
+    #year {
+        width: 30%;
     }
 
-    label{
+    /* button[type="submit"], button[type="reset"]{
+        width:20%;
+    } */
+
+    label {
         font-size: 10px;
     }
 
-    #font{
+    #font {
         font-size: 10px;
     }
 
-    .table{
+    .table {
         font-size: 10px;
     }
 }

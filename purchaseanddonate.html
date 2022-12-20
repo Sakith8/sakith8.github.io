@@ -173,7 +173,7 @@
               <label for="name">Name</label>
             </div><br><br>
             <p class="align">
-              <input type="text1" name="name" id="name" placeholder="Enter Name" width="100px" required>
+              <input type="text1" name="name" id="name1" placeholder="Enter Name" width="100px" required>
             <div class="error"></div>
             </p>
             <br>
@@ -213,26 +213,34 @@
           <div class="details2" id="justify">
             <p class="align">
               <label for="name">Card Holder Name</label><br><br>
-            
-              <input type="text" name="fname" id="fname" placeholder="Enter Name" required>
-            <div id="error1"></div>
-            </p><br><br>
 
- <p class="align">
+              <input type="text" name="fname" id="fname" placeholder="Enter Name" required><br>
+            <div id="error"></div>
+            </p>
+          </div>
+          </p>
+
+
+          <div class="details2" id="justify">
+            <p class="align">
               <label for="name">Enter Card Number</label><br><br>
-           
-              <input type="text" name="Cnum" id="Cnum" placeholder="Enter Card Number" required>
+
+              <input type="text" name="Cnum" id="Cnum" placeholder="Enter Card Number" required><br>
             <div class="error"></div>
             </p><br>
+          </div>
 
-   <p class="align">
+
+          <div class="details2" id="justify">
+            <p class="align">
               <label for="name">CVC/CVV </label><br><br>
-              <input type="number" name="pin" id="pin" min="100" max="999" placeholder="Enter Pin" required>
+              <input type="number" name="pin" id="pin" min="100" max="999" placeholder="Enter Pin" required><br>
             <div class="error"></div>
             </p><br><br>
+          </div>
 
-                <p class="align">
-              <label for="month">Expiry Date</label><br><br>
+          <p class="align">
+            <label for="month">Expiry Date</label><br><br>
             <select name="month" id="month">
               <option value="Jan">Jan</option>
               <option value="Feb">Feb</option>
@@ -260,15 +268,13 @@
               <option value="2032">2031</option>
               <option value="2032">2032</option>
             </select>
-            </p><br><br>
+          </p><br><br>
 
 
-            <p class="align">
-              <button type="submit" class="submit" id="submit">Submit</button>
-
-              <button type="reset" class="reset" id="reset">Reset</button>
-            </p>
-          </div>
+          <p class="align">
+            <button type="button" class="submit" id="submit">Submit</button>
+            <button type="reset" class="reset" id="reset">Reset</button>
+          </p>
         </fieldset>
       </form>
       </p>
