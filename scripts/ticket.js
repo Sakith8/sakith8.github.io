@@ -287,16 +287,24 @@ addfavbut.addEventListener('click', (e) => {
     let contactnum = cnum.value;
     let Email = email.value;
     let Date = date.value;
+    const DurationChoice = duration.options[duration.selectedIndex].value;
 
-    adultchild = `${peoplechoice[0]} - ${numberOfLocalAdult}
-        ${peoplechoice[1]} - ${numberOfForeignAdult}
-        ${peoplechoice[2]} - ${numberOfLocalChildren}
-        ${peoplechoice[3]} - ${numberOfForeignChildren}`
+    if (numberOfLocalAdult > 1) {
+        adults1 = `${peoplechoice[0]} - ${numberOfLocalAdult}`;
 
-    totalcost = (numberOfLocalAdult * ticketPrices[0] + numberOfLocalChildren * ticketPrices[1])
-        + (numberOfLocalAdult + numberOfLocalChildren) * durationPriceForLocal
-        + (numberOfForeignAdult * ticketPrices[2] + numberOfForeignChildren * ticketPrices[3])
-        + (numberOfLocalAdult + numberOfForeignChildren) * durationPriceForForeign;
+    }
+    else if (numberOfForeignAdult > 1) {
+        adults2 = `${peoplechoice[1]} - ${numberOfForeignAdult}`;
+
+    }
+    else if (numberOfLocalChildren > 1) {
+        childs1 = `${peoplechoice[2]} - ${numberOfLocalChildren}`;
+
+    }
+    else if (numberOfForeignChildren > 1) {
+        childs2 = `${peoplechoice[3]} - ${numberOfForeignChildren}`;
+
+    }
 
     if (DurationChoice == "3 Hours") {
         durationPriceForLocal = 0.00;
@@ -314,6 +322,16 @@ addfavbut.addEventListener('click', (e) => {
 
     }
 
+    adultchild = `${peoplechoice[0]} - ${numberOfLocalAdult}
+    ${peoplechoice[1]} - ${numberOfForeignAdult}
+    ${peoplechoice[2]} - ${numberOfLocalChildren}
+    ${peoplechoice[3]} - ${numberOfForeignChildren}`
+
+    totalcost = (numberOfLocalAdult * ticketPrices[0] + numberOfLocalChildren * ticketPrices[1])
+        + (numberOfLocalAdult + numberOfLocalChildren) * durationPriceForLocal
+        + (numberOfForeignAdult * ticketPrices[2] + numberOfForeignChildren * ticketPrices[3])
+        + (numberOfLocalAdult + numberOfForeignChildren) * durationPriceForForeign;
+
     let fav = { txtname: name, txtcontact: contactnum, txtDate: Date, txtemail: Email, txttotal: totalcost, txttickets: totaltickets, txttime: duration, txttype: adultchild }
     JSONfav = JSON.stringify(fav)
     localStorage.setItem('favourite', JSONfav);
@@ -325,8 +343,8 @@ addfavbut.addEventListener('click', (e) => {
 ordfavbut.addEventListener('click', () => {
     let fav1 = localStorage.getItem('favourite',)
     let fav2 = JSON.parse(fav1);
-    const DurationChoice = duration.options[duration.selectedIndex].value;
 
+    const DurationChoice = duration.options[duration.selectedIndex].value;
 
     console.log(fav2["txttype", "txttotal", "txttime"])
     table.innerHTML = `
