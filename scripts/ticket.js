@@ -79,7 +79,7 @@ window.addEventListener("load", function () {
 //displaying number of loyalty points the user has achieved when clicked
 checkbut.addEventListener("click", function (event) {
     event.preventDefault();
-    if (totaltickets >= 3) {
+    if (totaltickets > 3) {
         loyaltyPoints = totaltickets * 15
     }
     else {
@@ -248,6 +248,13 @@ clear.addEventListener('click', (e) => {
     </tr>	
     `
 })
+
+const loyaltyOut = document.getElementById("Loyal-point");
+
+function displayloyalty(){
+    loyaltyOut.classList.toggle("hidden");
+    
+}
 
 //submit button
 submitbtn.addEventListener('submit' , (e)=>{
