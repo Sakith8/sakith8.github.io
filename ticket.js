@@ -121,12 +121,12 @@ function addToOrder(event) {
         durationPriceForForeign = 0.00;
 
     }
-    else if (DurationChoice == "Half Day") {
+    else if (DurationChoice === "Half Day") {
         durationPriceForLocal = 350.00;
         durationPriceForForeign = 450.00;
 
     }
-    else if (DurationChoice == "Full Day") {
+    else if (DurationChoice === "Full Day") {
         durationPriceForLocal = 600.00;
         durationPriceForForeign = 800.00;
 
@@ -161,13 +161,13 @@ function addToOrder(event) {
     totalcost = (numberOfLocalAdult * ticketPrices[0] + numberOfLocalChildren * ticketPrices[1])
         + (numberOfLocalAdult + numberOfLocalChildren) * durationPriceForLocal
         + (numberOfForeignAdult * ticketPrices[2] + numberOfForeignChildren * ticketPrices[3])
-        + (numberOfLocalAdult + numberOfForeignChildren) * durationPriceForForeign;
+        + (numberOfForeignAdult + numberOfForeignChildren) * durationPriceForForeign;
 
 
 
     //summary in overall table
     table.innerHTML =
-        `<tr>
+    `<tr>
     <th>Ticket Purchased</th>
     <th>Duration</th>
     <th>Cost</th>
@@ -193,7 +193,7 @@ placebut.addEventListener('click', (e) => {
     totaltickets = numberOfLocalAdult + numberOfForeignAdult + numberOfLocalChildren + numberOfForeignChildren;
 
     table.innerHTML =
-        `<tr>
+    `<tr>
     <th>Ticket Purchased</th>
     <th>Duration</th>
     <th>Cost</th>
@@ -235,15 +235,14 @@ placebut.addEventListener('click', (e) => {
 clear.addEventListener('click', (e) => {
     e.preventDefault();
     table.innerHTML =
-        `<tr>		    
+    `<tr>		    
 	<th>Ticket Purchased</th>
     <th>Duration</th>
     <th>Cost</th>
 	</tr>`
 
     table1.innerHTML =
-        `
-    <tr>
+    `<tr>
     <td>Total Tickets Purchased</td> 
     <td>Total Cost</td>
     </tr>	
@@ -306,12 +305,12 @@ addfavbut.addEventListener('click', (e) => {
 
     }
 
-    if (DurationChoice == "3 Hours") {
+    if (DurationChoice === "3 Hours") {
         durationPriceForLocal = 0.00;
         durationPriceForForeign = 0.00;
 
     }
-    else if (DurationChoice == "Half Day") {
+    else if (DurationChoice === "Half Day") {
         durationPriceForLocal = 350.00;
         durationPriceForForeign = 450.00;
 
@@ -330,13 +329,11 @@ addfavbut.addEventListener('click', (e) => {
     totalcost = (numberOfLocalAdult * ticketPrices[0] + numberOfLocalChildren * ticketPrices[1])
         + (numberOfLocalAdult + numberOfLocalChildren) * durationPriceForLocal
         + (numberOfForeignAdult * ticketPrices[2] + numberOfForeignChildren * ticketPrices[3])
-        + (numberOfLocalAdult + numberOfForeignChildren) * durationPriceForForeign;
+        + (numberOfForeignAdult + numberOfForeignChildren) * durationPriceForForeign;
 
     let fav = { txtname: name, txtcontact: contactnum, txtDate: Date, txtemail: Email, txttotal: totalcost, txttickets: totaltickets, txttime: duration, txttype: adultchild }
     JSONfav = JSON.stringify(fav)
     localStorage.setItem('favourite', JSONfav);
-
-
 }
 )
 
